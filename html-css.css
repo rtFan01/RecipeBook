@@ -14,11 +14,12 @@
 				left: 5%;
 				padding: 5px;
 				margin: 10px;
-				width: 15%;
+				width: 17%;
 				background-color: #ffecc4;
 				border: 3px solid #7c0000;
 				padding-top: 20px;
 				padding-bottom: 20px;
+				text-align: left;
 			}
 			
 			a:link {
@@ -53,30 +54,22 @@
 			a.sidenavbar:link {
 				color: #7c0000;
 				text-decoration: none;
-				padding: 10px;
-				margin: 5px;
 				font-size: 20px;
 			}
 			
 			a.sidenavbar:visited {
 				color: #7c0000;
 				text-decoration: none;
-				padding: 10px;
-				margin: 5px;
 				font-size: 20px;
 			}
 			
 			body {
 				background-color: #fffaef;
 				text-align: center;
-				width: 700px;
+				width: 50%;
 				margin-left: auto;
 				margin-right: auto;
 				color:  black;
-			}
-			
-			#sidenav {
-				text-align: left;
 			}
 			
 			p, ol {
