@@ -8,7 +8,7 @@
     background-color: #ffecc4;
 }
 
-#sidenav {
+#sidenav, #sidenavS {
     position: fixed;
     top: 20%;
     left: 5%;
@@ -20,6 +20,10 @@
     padding-top: 20px;
     padding-bottom: 20px;
     text-align: left;
+}
+
+#sidenavS {
+    width: 13%;
 }
 
 a:link {
