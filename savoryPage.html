@@ -65,17 +65,17 @@
             </ol>
         </div>
         <script>
-            var grilledCheeseButton = document.getElementById("grilledCheeseB")
-            var potatoesButton = document.getElementById("potatoesB")
-            var nextRightButton = document.getElementById("scrollRB")
-            var nextLeftButton = document.getElementById("scrollLB")
+            var grilledCheeseButton = document.getElementById("grilledCheeseB");
+            var potatoesButton = document.getElementById("potatoesB");
+            var nextRightButton = document.getElementById("scrollRB");
+            var nextLeftButton = document.getElementById("scrollLB");
 
-            var recipeShowcase = document.getElementById("recipeDiv")
-            
-            var recipeNumber = 1
+            var recipeShowcase = document.getElementById("recipeDiv");
+
+            var recipeNumber = 1;
 
             var onCheeseButtonClick = function() {
-                recipeNumber = 1
+                recipeNumber = 1;
                 recipeShowcase.innerHTML = "<h2 id=\"grilledCheese\">Grilled Cheese</h2>\n" +
                     "            <p><strong>Serves:</strong> 2 - 3 people\n" +
                     "                <br>\n" +
@@ -111,9 +111,9 @@
                     "                <li>After a similar amount of time has passed, turn off the stove and let cool</li>\n" +
                     "                <li>Serve</li>\n" +
                     "            </ol>"
-            }
+            };
             var onPotatoButtonClick = function () {
-                recipeNumber = 2
+                recipeNumber = 2;
                 recipeShowcase.innerHTML = "<h2 id=\"potatoes\">Potatoes</h2>\n" +
                     "        <p><strong>Serves:</strong> 2 - 3 people\n" +
                     "            <br>\n" +
@@ -157,22 +157,22 @@
                     "            <li>Let cool</li>\n" +
                     "            <li>Serve</li>\n" +
                     "        </ol>"
-            }
+            };
             var onRightButtonClick = function () {
                 if (recipeNumber === 1) {
                     onPotatoButtonClick()
                 }
-            }
+            };
             var onLeftButtonClick = function () {
                 if (recipeNumber === 2) {
                     onCheeseButtonClick()
                 }
-            }
+            };
 
-            grilledCheeseButton.addEventListener("click", onCheeseButtonClick)
-            potatoesButton.addEventListener("click", onPotatoButtonClick)
-            nextRightButton.addEventListener("click", onRightButtonClick)
-            nextLeftButton.addEventListener("click", onLeftButtonClick)
+            grilledCheeseButton.addEventListener("click", onCheeseButtonClick);
+            potatoesButton.addEventListener("click", onPotatoButtonClick);
+            nextRightButton.addEventListener("click", onRightButtonClick);
+            nextLeftButton.addEventListener("click", onLeftButtonClick);
         </script>
     </body>
 </html>
