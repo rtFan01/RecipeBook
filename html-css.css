@@ -133,3 +133,28 @@ button {
     font-family: "sans-serif";
     font-size: 32px;
 }
+
+#GoToIndex {
+    position: fixed;
+    bottom: 10%;
+    right: 0%;
+    padding: 10px;
+    width: 10%;
+    background-color: #ffecc4;
+    border: 2px solid #7c0000;
+}
+
+#indexLink:link {
+    color: #7c0000;
+    text-decoration: none;
+}
+
+#indexLink:hover {
+    color: #7c0000;
+    text-decoration: none;
+}
+
+#indexLink:visited {
+    color: #7c0000;
+    text-decoration: none;
+}
