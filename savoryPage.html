@@ -64,99 +64,102 @@
                 <li>Serve</li>
             </ol>
         </div>
+
+        <div id="GoToIndex">Go to main <a href="" id="indexLink">index</a></div>
         <script>
             var grilledCheeseButton = document.getElementById("grilledCheeseB");
             var potatoesButton = document.getElementById("potatoesB");
             var nextRightButton = document.getElementById("scrollRB");
             var nextLeftButton = document.getElementById("scrollLB");
-
-            var recipeShowcase = document.getElementById("recipeDiv");
-
+            var recipeShowcase = document.getElementById("recipeDiv")
             var recipeNumber = 1;
+
+            var recipe1 = "<h2 id=\"grilledCheese\">Grilled Cheese</h2>\n" +
+                "            <p><strong>Serves:</strong> 2 - 3 people\n" +
+                "                <br>\n" +
+                "                <strong>Time:</strong> 2 - 4 minutes set-up, 10 - 15 minutes cook\n" +
+                "                <br>\n" +
+                "                <strong>Tools:</strong> A frying pan, a cutting board, a stove, a bread knife,\n" +
+                "                and a butter/cheese knife</p>\n" +
+                "            <table>\n" +
+                "                <tr>\n" +
+                "                    <th>Ingredients</th>\n" +
+                "                    <th>Amount</th>\n" +
+                "                </tr>\n" +
+                "                <tr>\n" +
+                "                    <td>Baguette</td>\n" +
+                "                    <td>1</td>\n" +
+                "                </tr>\n" +
+                "                <tr>\n" +
+                "                    <td>Cheese</td>\n" +
+                "                    <td>1/2 a block, depending</td>\n" +
+                "                </tr>\n" +
+                "                <tr>\n" +
+                "                    <td>Butter</td>\n" +
+                "                    <td>1/5 stick</td>\n" +
+                "                </tr>\n" +
+                "            </table>\n" +
+                "            <ol>\n" +
+                "                <li>Cut up cheese and baguette into similarly-sized slices</li>\n" +
+                "                <li>Butter, or otherwise grease, and heat the pan on low - medium</li>\n" +
+                "                <li>Make small sandwiches with the baguette and cheese slices</li>\n" +
+                "                <li>Butter the outside of the sandwiches</li>\n" +
+                "                <li>Put sandwiches in the pan</li>\n" +
+                "                <li>Let cook for 5 - 7 minutes, then flip</li>\n" +
+                "                <li>After a similar amount of time has passed, turn off the stove and let cool</li>\n" +
+                "                <li>Serve</li>\n" +
+                "            </ol>"
+            var recipe2 = "<h2 id=\"potatoes\">Potatoes</h2>\n" +
+                "        <p><strong>Serves:</strong> 2 - 3 people\n" +
+                "            <br>\n" +
+                "            <strong>Time:</strong> 15 - 20 minutes set-up, 10 - 15 minutes cook\n" +
+                "            <br>\n" +
+                "            <strong>Tools:</strong> A frying pan, a cutting board, a stove, a knife that can\n" +
+                "            chop <em>and</em> mince, and a wooden spoon</p>\n" +
+                "        <table>\n" +
+                "            <tr>\n" +
+                "                <th>Ingredients</th>\n" +
+                "                <th>Amount</th>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td>Potatoes</td>\n" +
+                "                <td>3 medium</td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td>Garlic</td>\n" +
+                "                <td>4 - 6 segments</td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td>Olive Oil</td>\n" +
+                "                <td>As much as needed</td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td>Scallions</td>\n" +
+                "                <td>2 - 3</td>\n" +
+                "            </tr>\n" +
+                "            <tr>\n" +
+                "                <td>Salt</td>\n" +
+                "                <td>As much as needed</td>\n" +
+                "            </tr>\n" +
+                "        </table>\n" +
+                "        <ol>\n" +
+                "            <li>Cut potatoes into fry-like shapes</li>\n" +
+                "            <li>Mince garlic and chop scallions</li>\n" +
+                "            <li>Grease pan with olive oil, and turn stove on low - medium heat</li>\n" +
+                "            <li>Add potatoes, garlic, and scallions</li>\n" +
+                "            <li>Add olive oil and salt as needed</li>\n" +
+                "            <li>Let cook for 10 - 15 minutes; don't forget to taste test!</li>\n" +
+                "            <li>Let cool</li>\n" +
+                "            <li>Serve</li>\n" +
+                "        </ol>"
 
             var onCheeseButtonClick = function() {
                 recipeNumber = 1;
-                recipeShowcase.innerHTML = "<h2 id=\"grilledCheese\">Grilled Cheese</h2>\n" +
-                    "            <p><strong>Serves:</strong> 2 - 3 people\n" +
-                    "                <br>\n" +
-                    "                <strong>Time:</strong> 2 - 4 minutes set-up, 10 - 15 minutes cook\n" +
-                    "                <br>\n" +
-                    "                <strong>Tools:</strong> A frying pan, a cutting board, a stove, a bread knife,\n" +
-                    "                and a butter/cheese knife</p>\n" +
-                    "            <table>\n" +
-                    "                <tr>\n" +
-                    "                    <th>Ingredients</th>\n" +
-                    "                    <th>Amount</th>\n" +
-                    "                </tr>\n" +
-                    "                <tr>\n" +
-                    "                    <td>Baguette</td>\n" +
-                    "                    <td>1</td>\n" +
-                    "                </tr>\n" +
-                    "                <tr>\n" +
-                    "                    <td>Cheese</td>\n" +
-                    "                    <td>1/2 a block, depending</td>\n" +
-                    "                </tr>\n" +
-                    "                <tr>\n" +
-                    "                    <td>Butter</td>\n" +
-                    "                    <td>1/5 stick</td>\n" +
-                    "                </tr>\n" +
-                    "            </table>\n" +
-                    "            <ol>\n" +
-                    "                <li>Cut up cheese and baguette into similarly-sized slices</li>\n" +
-                    "                <li>Butter, or otherwise grease, and heat the pan on low - medium</li>\n" +
-                    "                <li>Make small sandwiches with the baguette and cheese slices</li>\n" +
-                    "                <li>Butter the outside of the sandwiches</li>\n" +
-                    "                <li>Put sandwiches in the pan</li>\n" +
-                    "                <li>Let cook for 5 - 7 minutes, then flip</li>\n" +
-                    "                <li>After a similar amount of time has passed, turn off the stove and let cool</li>\n" +
-                    "                <li>Serve</li>\n" +
-                    "            </ol>"
+                recipeShowcase.innerHTML = recipe1
             };
             var onPotatoButtonClick = function () {
                 recipeNumber = 2;
-                recipeShowcase.innerHTML = "<h2 id=\"potatoes\">Potatoes</h2>\n" +
-                    "        <p><strong>Serves:</strong> 2 - 3 people\n" +
-                    "            <br>\n" +
-                    "            <strong>Time:</strong> 15 - 20 minutes set-up, 10 - 15 minutes cook\n" +
-                    "            <br>\n" +
-                    "            <strong>Tools:</strong> A frying pan, a cutting board, a stove, a knife that can\n" +
-                    "            chop <em>and</em> mince, and a wooden spoon</p>\n" +
-                    "        <table>\n" +
-                    "            <tr>\n" +
-                    "                <th>Ingredients</th>\n" +
-                    "                <th>Amount</th>\n" +
-                    "            </tr>\n" +
-                    "            <tr>\n" +
-                    "                <td>Potatoes</td>\n" +
-                    "                <td>3 medium</td>\n" +
-                    "            </tr>\n" +
-                    "            <tr>\n" +
-                    "                <td>Garlic</td>\n" +
-                    "                <td>4 - 6 segments</td>\n" +
-                    "            </tr>\n" +
-                    "            <tr>\n" +
-                    "                <td>Olive Oil</td>\n" +
-                    "                <td>As much as needed</td>\n" +
-                    "            </tr>\n" +
-                    "            <tr>\n" +
-                    "                <td>Scallions</td>\n" +
-                    "                <td>2 - 3</td>\n" +
-                    "            </tr>\n" +
-                    "            <tr>\n" +
-                    "                <td>Salt</td>\n" +
-                    "                <td>As much as needed</td>\n" +
-                    "            </tr>\n" +
-                    "        </table>\n" +
-                    "        <ol>\n" +
-                    "            <li>Cut potatoes into fry-like shapes</li>\n" +
-                    "            <li>Mince garlic and chop scallions</li>\n" +
-                    "            <li>Grease pan with olive oil, and turn stove on low - medium heat</li>\n" +
-                    "            <li>Add potatoes, garlic, and scallions</li>\n" +
-                    "            <li>Add olive oil and salt as needed</li>\n" +
-                    "            <li>Let cook for 10 - 15 minutes; don't forget to taste test!</li>\n" +
-                    "            <li>Let cool</li>\n" +
-                    "            <li>Serve</li>\n" +
-                    "        </ol>"
+                recipeShowcase.innerHTML = recipe2
             };
             var onRightButtonClick = function () {
                 if (recipeNumber === 1) {
