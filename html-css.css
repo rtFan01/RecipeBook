@@ -134,7 +134,7 @@ button {
     font-size: 32px;
 }
 
-#GoToIndex {
+.GoToIndex {
     position: fixed;
     bottom: 10%;
     right: 0%;
@@ -148,17 +148,17 @@ button {
     bottom: 17%;
 }
 
-#indexLink:link {
+.indexLink:link {
     color: #7c0000;
     text-decoration: none;
 }
 
-#indexLink:hover {
+.indexLink:hover {
     color: #7c0000;
     text-decoration: none;
 }
 
-#indexLink:visited {
+.indexLink:visited {
     color: #7c0000;
     text-decoration: none;
 }
