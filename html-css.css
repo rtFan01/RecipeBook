@@ -144,6 +144,10 @@ button {
     border: 2px solid #7c0000;
 }
 
+#height {
+    bottom: 17%;
+}
+
 #indexLink:link {
     color: #7c0000;
     text-decoration: none;
